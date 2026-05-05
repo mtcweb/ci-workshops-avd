@@ -90,6 +90,15 @@ local_users:
   sha512_password: $6$arista$VGAQ9ZKd61s9Ub66oXmRHGOD67qBlJU8QH39iSCJ6uoBkhW/Tm/fhOkyHNECQsf5audNj0hZ3sowbfDNFUWBP.
   ssh_key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCzBnO+Tpu8LKqdiWAnTq5uU07wsPBrPL4Wzpat1u/rxMmvQ3dDhdRlWZZCwmhBrWW2/C9VYOAqTxMkEcpC5thKPec1RBe4klpzwgtedNKiTxp0q+h1TCaHVfpLLOE/QPaDBKCKuMeIUNjKOZATiLHQRV7BHEMdsUVXbFLhux9wPuDQe0bvGdsl+OTr8HG4h8rYiJHraRWIgRLA/BUxsJnqCjqrF3xSyrm57nqoZ2hQsSApmn7jiN9W57ihyx4uJrVO/1CibdtvJIf05RFutiYTz4z+VO8KT+5qhvebuYFBZQBx9wjgiog4qe5c/2qQQcrB6SA655rHgZia10eWY4j9
     arista@vw-atd-2-3dbb1809-eos
+logging:
+  vrfs:
+  - name: default
+    source_interface: Management0
+    hosts:
+    - name: 10.200.0.108
+      protocol: udp
+    - name: 10.200.1.108
+      protocol: udp
 loopback_interfaces:
 - name: Loopback0
   description: ROUTER_ID
