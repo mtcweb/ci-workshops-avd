@@ -36,7 +36,7 @@ custom_structured_configuration_banners:
 
 # Aliases
 custom_structured_configuration_aliases:
-  aliases: |
+  |
     alias al show running-config | include alias
     alias bem show bgp evpn route mac-ip
     alias ber show bgp evpn
