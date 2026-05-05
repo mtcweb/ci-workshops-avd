@@ -28,6 +28,12 @@ cv_settings:
   terminattr:
     disable_aaa: true
 
+# Login Banner
+custom_structured_configuration_banners:
+  motd: |
+    You shall not pass. Unless you are authorized. Then you shall pass.
+    EOF
+    
 # AAA settings and local users
 aaa_settings:
   authorization:
